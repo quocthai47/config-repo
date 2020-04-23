@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:order
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 123456
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  zipkin:
+    base-url: http://localhost:8085/
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
+server:
+  port: 8083
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8081/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
