@@ -1,6 +1,8 @@
 spring:
+  application:
+    name: order-service
   datasource:
-    url: jdbc:h2:file:classpath:resources/h2-db/testdb;DB_CLOSE_ON_EXIT=FALSE;IFEXISTS=TRUE;DB_CLOSE_DELAY=-1;
+    url: jdbc:h2:file:~/test
     driver-class-name: org.h2.Driver
     username: sa
     password:
@@ -21,7 +23,6 @@ server:
 eureka:
   instance:
     hostname: localhost
-    appName: order-service
   client:
     registerWithEureka: true
     fetchRegistry: true
