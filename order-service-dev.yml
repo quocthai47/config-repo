@@ -21,6 +21,7 @@ server:
 eureka:
   instance:
     hostname: localhost
+    appName: order-service
   client:
     registerWithEureka: true
     fetchRegistry: true
