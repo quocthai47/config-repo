@@ -30,4 +30,8 @@ zuul:
       path: /inventory/**
       serviceId: inventory-service
       stripPrefix: false
+    payment-service:
+      path: /payment/**
+      serviceId: payment-service
+      stripPrefix: false
 
