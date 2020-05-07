@@ -34,4 +34,8 @@ zuul:
       path: /payment/**
       serviceId: payment-service
       stripPrefix: false
+    saga-service:
+      path: /saga/**
+      serviceId: saga-service
+      stripPrefix: false
 
